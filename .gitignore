@@ -52,3 +52,7 @@ coverage/
 *.py,cover
 .hypothesis/
 .pytest_cache/
+
+
+# Allow backend build.sh
+!backend/build.sh
