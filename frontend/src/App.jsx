@@ -8,7 +8,7 @@ function App() {
   const [colour, setColour] = useState("black")
 
   useEffect(() => {
-    axios.get("http://127.0.0.1:8000/api/cars/")
+    axios.get("https://car-builder.onrender.com/api/cars/")
     .then(res => setCars(res.data))
     .catch(err => console.error(err));
 
@@ -16,7 +16,7 @@ function App() {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    axios.post("http://127.0.0.1:8000/api/cars/", { name, colour})
+    axios.post("https://car-builder.onrender.com/api/cars/", { name, colour})
     .then(res => {
         setCars([...cars, res.data]);
         setName("");
