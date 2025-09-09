@@ -25,7 +25,7 @@ SECRET_KEY = 'django-insecure-lycf(88cfrcn(6oxs&krxjex^tfm929tnym761n^oe&025dirm
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ["car-builder.onrender.com", "127.0.0.1", "localhost"]
+ALLOWED_HOSTS = ["cars-builder.onrender.com", "127.0.0.1", "localhost"]
 
 
 # Application definition
