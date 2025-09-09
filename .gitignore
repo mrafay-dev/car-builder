@@ -6,8 +6,6 @@ __pycache__/
 *.so
 *.egg
 *.egg-info/
-dist/
-build/
 .eggs/
 
 # Django specific
@@ -32,9 +30,7 @@ yarn-debug.log*
 yarn-error.log*
 .pnpm-debug.log*
 
-# React build output (ignore if rebuilding on deploy)
-frontend/build/
-frontend/dist/
+
 
 # === IDEs / Editors ===
 .vscode/
