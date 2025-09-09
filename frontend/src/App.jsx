@@ -8,7 +8,7 @@ function App() {
   const [colour, setColour] = useState("black")
 
   useEffect(() => {
-    axios.get("https://car-builder.onrender.com/api/cars/")
+    axios.get("https://cars-builder.onrender.com/api/cars/")
     .then(res => setCars(res.data))
     .catch(err => console.error(err));
 
@@ -16,7 +16,7 @@ function App() {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    axios.post("https://car-builder.onrender.com/api/cars/", { name, colour})
+    axios.post("https://cars-builder.onrender.com/api/cars/", { name, colour})
     .then(res => {
         setCars([...cars, res.data]);
         setName("");
