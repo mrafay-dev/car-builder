@@ -4,14 +4,14 @@ set -o errexit
 # Install Python dependencies
 pip install -r requirements.txt
 
-# Build frontend first
-cd frontend
+# Move to the frontend folder one level up
+cd ../frontend
 npm install
 npm run build
-cd ..
+cd ../backend
 
-# Collect static files (includes React assets)
+# Collect static files
 python manage.py collectstatic --noinput
 
-# Apply database migrations
+# Apply migrations
 python manage.py migrate
